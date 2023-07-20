@@ -1,6 +1,7 @@
 # Projeto
 
-![alt](../AgroMonitor/public/logo192.png)
+![Descrição da imagem](./public/Indústrias%20timmerman%20logo.png)
+
 
 
 
