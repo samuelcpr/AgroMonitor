@@ -29,11 +29,11 @@ export function Timeline() {
 
   return (
     <main className="timeline">
-      <Header title="Home" />
+      <Header title="Criar observações" />
 
       <form onSubmit={createNewTweet} className="new-tweet-form">
         <label htmlFor="tweet">
-          <img src="https://avatars.githubusercontent.com/u/79328967?v=4" alt="Diego Fernandes" />
+          <img src="https://avatars.githubusercontent.com/u/79328967?v=4" alt="Samuel Carlos" />
           <textarea 
             id="tweet" 
             placeholder="What's happening?" 
@@ -45,10 +45,8 @@ export function Timeline() {
           />
         </label>
 
-        <button type="submit">Tweet</button>
+        <button type="submit">Enviar</button>
       </form>
-
-      <Separator />
 
       {tweets.map(tweet => {
         return <Tweet key={tweet} content={tweet} />
