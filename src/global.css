@@ -5,11 +5,12 @@
 }
 
 :root {
-  --twitter-blue: #1da1f2;
+  --twitter-blue: #A8BF58;
 }
 
 body {
-  color: #0f1419;
+  color: var(--twitter-blue);
+  background-color: #0f1419;
   -webkit-font-smoothing: antialiased;
 }
 

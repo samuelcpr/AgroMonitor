@@ -1,52 +1,52 @@
-import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Pencil, User } from 'phosphor-react'
+import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, AlignBottomSimple, AlignBottom, Pencil, User } from 'phosphor-react'
 import { NavLink } from 'react-router-dom';
-import twitterLogo from '../assets/logo-twitter.svg'
+import Agro from '../assets/Indústrias timmerman logo.svg'
 
 import './Sidebar.css';
 
 export function Sidebar() {
   return (
     <aside className="sidebar">
-      <img className="logo" src={twitterLogo} alt="Logo" />
+      <img className="logo" src={Agro} alt="Logo" />
 
       <nav className="main-navigation">
         <NavLink to="/">
-          <House weight="fill" />
-          <span>Home</span>
+          <AlignBottom weight="fill" />
+          <span>Criar observações</span>
         </NavLink>
         <a href="">
-          <Hash />
-          <span>Explore</span>
+          <AlignBottomSimple />
+          <span>Tipos de praga</span>
         </a>
         <a href="">
           <Bell />
-          <span>Notifications</span>
+          <span>Alertas</span>
         </a>
         <a href="">
           <Envelope />
-          <span>Messages</span>
+          <span>Soluções aplicadas</span>
         </a>
         <a href="">
           <BookmarkSimple />
-          <span>Bookmarks</span>
+          <span>Documentação</span>
         </a>
         <a href="">
           <FileText />
-          <span>Lists</span>
+          <span>Relatório do solo</span>
         </a>
         <a href="">
           <User />
-          <span>Profile</span>
+          <span>Usuarios</span>
         </a>
         <a href="">
           <DotsThreeCircle />
-          <span>More</span>
+          <span>Relatórios do sistema</span>
         </a>
       </nav>
 
       <button className="new-tweet" type="button">
         <Pencil />
-        <span>Tweet</span>
+        <span>Login</span>
       </button>
     </aside>
   )
